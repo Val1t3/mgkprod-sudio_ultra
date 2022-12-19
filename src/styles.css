@@ -1,0 +1,48 @@
+@keyframes translate-up-anim {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-40px);
+    }
+}
+
+@keyframes translate-down-anim {
+    0% {
+        transform: translateY(-40px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.translate-up {
+    height: 33px;
+    overflow: hidden;
+}
+
+.translate-up:hover > #title-1 {
+    animation-name: translate-up-anim;
+    animation-duration: 0.3s;
+    animation-delay: 0.05s;
+    animation-fill-mode: forwards;
+}
+
+.translate-up:not(:hover) > #title-1 {
+    animation-name: translate-down-anim;
+    animation-duration: 0.3s;
+    animation-delay: 0.05s;
+    animation-fill-mode: backwards;
+}
+
+.translate-up-2:hover > #title-2 {
+    animation-name: translate-up-anim;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards;
+}
+
+.translate-up-2:not(:hover) > #title-2 {
+    animation-name: translate-down-anim;
+    animation-duration: 0.25s;
+    animation-fill-mode: backwards;
+}
