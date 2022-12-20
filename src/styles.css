@@ -1,48 +1,95 @@
+html {
+  scroll-behavior: smooth;
+}
+
 @keyframes translate-up-anim {
-    0% {
-        transform: translateY(0);
-    }
-    100% {
-        transform: translateY(-40px);
-    }
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-40px);
+  }
 }
 
 @keyframes translate-down-anim {
-    0% {
-        transform: translateY(-40px);
-    }
-    100% {
-        transform: translateY(0);
-    }
+  0% {
+    transform: translateY(-40px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .translate-up {
-    height: 33px;
-    overflow: hidden;
+  height: 33px;
+  overflow: hidden;
 }
 
 .translate-up:hover > #title-1 {
-    animation-name: translate-up-anim;
-    animation-duration: 0.3s;
-    animation-delay: 0.05s;
-    animation-fill-mode: forwards;
+  animation-name: translate-up-anim;
+  animation-duration: 0.3s;
+  animation-delay: 0.05s;
+  animation-fill-mode: forwards;
 }
 
 .translate-up:not(:hover) > #title-1 {
-    animation-name: translate-down-anim;
-    animation-duration: 0.3s;
-    animation-delay: 0.05s;
-    animation-fill-mode: backwards;
+  animation-name: translate-down-anim;
+  animation-duration: 0.3s;
+  animation-fill-mode: backwards;
 }
 
 .translate-up-2:hover > #title-2 {
-    animation-name: translate-up-anim;
-    animation-duration: 0.25s;
-    animation-fill-mode: forwards;
+  animation-name: translate-up-anim;
+  animation-duration: 0.25s;
+  animation-fill-mode: forwards;
 }
 
 .translate-up-2:not(:hover) > #title-2 {
-    animation-name: translate-down-anim;
-    animation-duration: 0.25s;
-    animation-fill-mode: backwards;
+  animation-name: translate-down-anim;
+  animation-duration: 0.25s;
+  animation-delay: 0.05s;
+  animation-fill-mode: backwards;
+}
+
+.slider {
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  -webkit-mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0) 0%,
+    rgb(0, 0, 0) 12.5%,
+    rgb(0, 0, 0) 87.5%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0) 0%,
+    rgb(0, 0, 0) 12.5%,
+    rgb(0, 0, 0) 87.5%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.slider-track {
+  width: calc(480px * 6);
+  animation: scroll 50s linear infinite;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc((-480px * 3) - 22px));
+  }
+}
+
+.head-fixed {
+  position: fixed;
+  top: 0;
+  width: calc(100% - 24px);
+  background-color: #121217;
+  border-bottom-left-radius: 48px;
+  border-bottom-right-radius: 48px;
 }
