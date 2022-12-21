@@ -20,6 +20,37 @@ html {
   }
 }
 
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc((-480px * 3) - 22px));
+  }
+}
+
+@keyframes logo-animation {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0.5;
+    transform: scale(1.35);
+  }
+}
+
+@keyframes logo-animation-not {
+  from {
+    opacity: 0.5;
+    transform: scale(1.35);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 .translate-up {
   height: 33px;
   overflow: hidden;
@@ -76,15 +107,6 @@ html {
   animation: scroll 50s linear infinite;
 }
 
-@keyframes scroll {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(calc((-480px * 3) - 22px));
-  }
-}
-
 .head-fixed {
   position: fixed;
   top: 0;
@@ -92,4 +114,16 @@ html {
   background-color: #121217;
   border-bottom-left-radius: 48px;
   border-bottom-right-radius: 48px;
+}
+
+.logo-hover:hover {
+  animation-name: logo-animation;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.logo-hover:not(:hover) {
+  animation-name: logo-animation-not;
+  animation-duration: 0.3s;
+  animation-fill-mode: backwards;
 }

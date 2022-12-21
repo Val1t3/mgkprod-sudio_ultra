@@ -569,6 +569,10 @@ video {
   margin-top: 5rem;
 }
 
+.mt-xs {
+  margin-top: 10px;
+}
+
 .block {
   display: block;
 }
@@ -579,6 +583,10 @@ video {
 
 .grid {
   display: grid;
+}
+
+.contents {
+  display: contents;
 }
 
 .h-320 {
@@ -607,6 +615,10 @@ video {
 
 .w-6 {
   width: 1.5rem;
+}
+
+.w-5 {
+  width: 1.25rem;
 }
 
 .flex-shrink {
@@ -725,6 +737,15 @@ video {
   border-color: rgb(18 18 23 / 0.2);
 }
 
+.divide-gray-300 > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-opacity: 1;
+  border-color: rgb(115 117 128 / var(--tw-divide-opacity));
+}
+
+.divide-gray-300\/20 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(115 117 128 / 0.2);
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
@@ -778,6 +799,10 @@ video {
   border-color: rgb(18 18 23 / 0.2);
 }
 
+.border-gray-500\/20 {
+  border-color: rgb(131 131 134 / 0.2);
+}
+
 .bg-black-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(18 18 23 / var(--tw-bg-opacity));
@@ -786,6 +811,16 @@ video {
 .bg-orange-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(234 61 37 / var(--tw-bg-opacity));
+}
+
+.bg-black-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(27 25 30 / var(--tw-bg-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .object-cover {
@@ -848,11 +883,6 @@ video {
   padding-right: 3rem;
 }
 
-.py-1\.5 {
-  padding-top: 0.375rem;
-  padding-bottom: 0.375rem;
-}
-
 .pb-8 {
   padding-bottom: 2rem;
 }
@@ -881,6 +911,10 @@ video {
   padding-bottom: 1.5rem;
 }
 
+.pb-7 {
+  padding-bottom: 1.75rem;
+}
+
 .pt-2 {
   padding-top: 0.5rem;
 }
@@ -893,8 +927,28 @@ video {
   padding-top: 3rem;
 }
 
-.pb-7 {
-  padding-bottom: 1.75rem;
+.pt-3 {
+  padding-top: 0.75rem;
+}
+
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
+.pb-20 {
+  padding-bottom: 5rem;
+}
+
+.pb-16 {
+  padding-bottom: 4rem;
+}
+
+.pb-14 {
+  padding-bottom: 3.5rem;
+}
+
+.pb-12 {
+  padding-bottom: 3rem;
 }
 
 .text-center {
@@ -941,6 +995,10 @@ video {
   font-size: 18px;
 }
 
+.text-slg {
+  font-size: 20px;
+}
+
 .font-extralight {
   font-weight: 200;
 }
@@ -951,6 +1009,10 @@ video {
 
 .font-light {
   font-weight: 300;
+}
+
+.font-normal {
+  font-weight: 400;
 }
 
 .text-white {
@@ -984,14 +1046,6 @@ video {
 
 .text-black-500\/80 {
   color: rgb(18 18 23 / 0.8);
-}
-
-.text-black-500\/20 {
-  color: rgb(18 18 23 / 0.2);
-}
-
-.text-black-500\/50 {
-  color: rgb(18 18 23 / 0.5);
 }
 
 .text-black-500\/60 {

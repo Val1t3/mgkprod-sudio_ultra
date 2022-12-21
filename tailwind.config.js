@@ -20,6 +20,7 @@ module.exports = {
         '1': '1px',
       },
       spacing: {
+        'xs': '10px',
         '320': '320px',
         '436': '436.5px',
         '466': '466.22px',
@@ -30,6 +31,7 @@ module.exports = {
       fontSize: {
         'sm': '16px',
         'xsm': '18px',
+        'slg': '20px',
         'lg': '22px',
         'xlg': '24px',
         'xl': '28px',
