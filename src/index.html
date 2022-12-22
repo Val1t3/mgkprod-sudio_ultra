@@ -17,12 +17,14 @@
 <body class="px-3 bg-black-500">
 
   <div
-    class="fixed bottom-0 left-0 w-full flex justify-between items-center space-x-3 bg-black-300/95 text-1sm z-50 p-4 rounded-t-2xl md:invisible">
-    <a href="" class="bg-gray-300/10 text-gray-300 font-light rounded-2xl col-span-2 py-2">Creations</a>
-    <a href="" class="bg-gray-300/10 text-gray-300 font-light rounded-2xl col-span-2 py-2">Services</a>
-    <a href="" class="bg-gray-300/10 text-gray-300 font-light rounded-2xl col-span-2 py-2">Supply</a>
+    class="fixed bottom-0 left-0 flex w-full bg-black-300/95 text-gray-300 text-1sm z-50 p-4 rounded-t-2xl space-x-3 md:invisible">
+    <div class="flex justify-between w-full text-center space-x-3">
+      <a href="#image-content" class=" w-full bg-gray-300/10 rounded-xl py-2">Creations</a>
+      <a href="#expertise" class="w-full bg-gray-300/10 rounded-xl py-2">Services</a>
+      <a href="" class="w-full bg-gray-300/10 rounded-xl py-2">Supply</a>
+    </div>
     <div class="flex justify-center">
-      <a href="" class="bg-orange-500 w-10 h-10 rounded-xl flex justify-center items-center">
+      <a href="" class="bg-orange-500 text-black-500 w-10 h-10 rounded-xl flex justify-center items-center">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
           class="w-6 h-6">
           <path stroke-linecap="round" stroke-linejoin="round"
@@ -47,12 +49,14 @@
     <div id="header-fixed"
       class="flex absolute justify-between p-6 bg-black-500 w-full rounded-b-4xl z-50 invisible md:visible">
       <nav class="flex space-x-5">
-        <button class="btn-anim px-5 py-1 border-1 border-gray-500/10 rounded-full text-white font-extralight text-lg">
+        <a href="#image-content-2"
+          class="btn-anim px-5 py-1 border-1 border-gray-500/10 rounded-full text-white font-extralight text-lg">
           Creations
-        </button>
-        <button class="btn-anim px-5 py-1 border-1 border-gray-500/10 rounded-full text-white font-extralight text-lg">
+        </a>
+        <a href="#expertise"
+          class="btn-anim px-5 py-1 border-1 border-gray-500/10 rounded-full text-white font-extralight text-lg">
           Services
-        </button>
+        </a>
         <button class="btn-anim px-5 py-1 border-1 border-gray-500/10 rounded-full text-white font-extralight text-lg">
           Supply
         </button>
@@ -183,6 +187,7 @@
     </div>
   </section>
 
+  <div id="image-content-2"></div>
 
   <!-- IMAGE-CONTENT SECTION -->
   <section id="image-content" class="relative space-y-3">
