@@ -60,6 +60,46 @@ html {
   }
 }
 
+@keyframes choice-anim-to-right {
+  from {
+    transform: translateX(0);
+    width: 145.51px;
+  }
+  to {
+    transform: translateX(155px);
+    width: 109.56px;
+  }
+}
+
+@keyframes choice-anim-to-left {
+  from {
+    transform: translateX(155px);
+    width: 109.56px;
+  }
+  to {
+    transform: translateX(0);
+    width: 145.51px;
+  }
+}
+
+@keyframes black-to-orange {
+  from {
+    color: #121217;
+  }
+  to {
+    color: #ea3d25;
+  }
+}
+
+@keyframes orange-to-black {
+  from {
+    color: #ea3d25;
+  }
+  to {
+    color: #121217;
+  }
+}
+
 .btn-anim:hover {
   animation-name: btn-animation;
   animation-duration: 0.25s;
@@ -147,4 +187,37 @@ html {
 
 .back-gray {
   background-color: rgba(115, 117, 128, 0.1);
+}
+
+.orange-to-black-anim {
+  animation-name: orange-to-black;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.black-to-orange-anim {
+  animation-name: black-to-orange;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+#choice {
+  position: absolute;
+  background-color: #121217;
+  height: 35.59px;
+  border-radius: 36px;
+  top: 5px;
+  left: 6px;
+}
+
+.choice-to-right {
+  animation-name: choice-anim-to-right;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+}
+
+.choice-to-left {
+  animation-name: choice-anim-to-left;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
 }

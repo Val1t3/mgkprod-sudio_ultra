@@ -36,7 +36,7 @@
 
 
   <!-- HEADER SECTION -->
-  <section id="header" class="bg-black-500 relative z-10">
+  <section id="header" class="bg-black-500 relative z-20">
     <button
       class="m-8 flex flex-col translate-up overflow-hidden justify-start items-center text-white text-xl space-x-1">
       <span id="title-1">Studio Ultra.</span>
@@ -464,14 +464,14 @@
           out how you can change
           the way you source web design & development, forever.
         </p>
-        <div class="flex justify-center md:justify-start pb-7 xl:block xl:ml-10">
-          <!-- <button id="ready-btn-1" class="font-light text-xsm rounded-4xl p-2 bg-black-500 text-orange-500">Design &
-              Build</button>
-            <button id="ready-btn-2" class="font-light text-xsm rounded-4xl p-2">Build only</button> -->
-          <button id="ready-btn"
-            class="w-278 font-light text-xsm rounded-4xl p-2 flex justify-center items-center space-x-3 border border-black-500/20">
-            <span class="ready-btn-1">Design & Build</span>
-            <span class="ready-btn-2">Build only</span>
+        <div class="flex justify-center relative md:justify-start pb-7 xl:block xl:ml-10">
+          <button id="ready-btn" class="w-278 relative">
+            <div
+              class="w-full flex justify-between px-5 py-2 items-center border text-xsm border-black-500/20 rounded-4xl">
+              <p id="design" class="z-10 black-to-orange-anim">Design & Build</p>
+              <p id="build" class="z-10 orange-to-black-anim">Build only</p>
+            </div>
+            <span id="choice" class="choice-to-left"></span>
           </button>
         </div>
       </div>

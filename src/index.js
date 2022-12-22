@@ -21,6 +21,9 @@ document.querySelector("#ready-btn").addEventListener("click", () => {
         document.querySelector("#ready-des-1").innerHTML = "Design, Frontend & Backend";
         document.querySelector("#ready-des-2").innerHTML = "Design, Frontend & Backend";
         document.querySelector("#ready-des-3").innerHTML = "Design, Frontend & Backend";
+        document.querySelector("#choice").classList.replace("choice-to-right", "choice-to-left");
+        document.querySelector("#design").classList.replace("orange-to-black-anim", "black-to-orange-anim");
+        document.querySelector("#build").classList.replace("black-to-orange-anim", "orange-to-black-anim");
     } else {
         document.querySelector("#price-1").innerHTML = "$2K";
         document.querySelector("#price-2").innerHTML = "$5K";
@@ -28,5 +31,8 @@ document.querySelector("#ready-btn").addEventListener("click", () => {
         document.querySelector("#ready-des-1").innerHTML = "Frontend & Backend";
         document.querySelector("#ready-des-2").innerHTML = "Frontend & Backend";
         document.querySelector("#ready-des-3").innerHTML = "Frontend & Backend";
+        document.querySelector("#choice").classList.replace("choice-to-left", "choice-to-right");
+        document.querySelector("#design").classList.replace("black-to-orange-anim", "orange-to-black-anim");
+        document.querySelector("#build").classList.replace("orange-to-black-anim", "black-to-orange-anim");
     }
 });
