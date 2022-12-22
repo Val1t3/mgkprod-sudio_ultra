@@ -1,6 +1,12 @@
 window.addEventListener("scroll", () => {
-    let header = document.querySelector("#header-fixed");
-    header.classList.toggle("head-fixed", window.scrollY >= 250);
+    document.querySelector("#header-fixed").classList.toggle("head-fixed", window.scrollY >= 250);
+
+    let creationsPosition = screen.width <= 1200 ? 1475 : 1640;
+    let servicesPosition = screen.width <= 1200 ? 4480 : 4665;
+    let lastPosition = screen.width <= 1200 ? 5180 : 5420;
+
+    document.querySelector("#creations-tag").classList.toggle("back-gray", window.scrollY >= creationsPosition && window.scrollY < servicesPosition);
+    document.querySelector("#services-tag").classList.toggle("back-gray", window.scrollY >= servicesPosition && window.scrollY < lastPosition);
 });
 
 let ready = true;

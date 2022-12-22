@@ -144,3 +144,7 @@ html {
   animation-duration: 0.3s;
   animation-fill-mode: backwards;
 }
+
+.back-gray {
+  background-color: rgba(115, 117, 128, 0.1);
+}
