@@ -16,31 +16,49 @@
 
 <body class="px-3 bg-black-500">
 
+  <div
+    class="fixed bottom-0 left-0 w-full flex justify-between items-center space-x-3 bg-black-300/95 text-1sm z-50 p-4 rounded-t-2xl md:invisible">
+    <a href="" class="bg-gray-300/10 text-gray-300 font-light rounded-2xl col-span-2 py-2">Creations</a>
+    <a href="" class="bg-gray-300/10 text-gray-300 font-light rounded-2xl col-span-2 py-2">Services</a>
+    <a href="" class="bg-gray-300/10 text-gray-300 font-light rounded-2xl col-span-2 py-2">Supply</a>
+    <div class="flex justify-center">
+      <a href="" class="bg-orange-500 w-10 h-10 rounded-xl flex justify-center items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
+        </svg>
+      </a>
+    </div>
+  </div>
+
 
   <!-- HEADER SECTION -->
   <section id="header" class="bg-black-500 relative z-10">
-    <button class="m-8 translate-up translate-up-2 flex justify-start items-center text-white text-xl space-x-1">
-      <span id="title-1">Studio</span>
-      <span id="title-2">Ultra.</span>
+    <button
+      class="m-8 flex flex-col translate-up overflow-hidden justify-start items-center text-white text-xl space-x-1">
+      <span id="title-1">Studio Ultra.</span>
+      <span id="title-2" class="text-gray-300">Studio Ultra.</span>
     </button>
     </div>
-    <h2 class="text-white px-8 pb-8 text-3xl">
-      NoCode <span class="text-gray-500">Powerhouse.</span>
+    <h2 class="text-white px-8 pb-8 text-2xl md:text-3xl lg:text-4xl flex flex-col md:flex-row">
+      <span class="md:pr-5">NoCode</span><span class="text-gray-500 -mt-5 md:mt-0">Powerhouse.</span>
     </h2>
-    <div id="header-fixed" class="flex absolute justify-between p-6 bg-black-500 w-full rounded-b-4xl z-50">
+    <div id="header-fixed"
+      class="flex absolute justify-between p-6 bg-black-500 w-full rounded-b-4xl z-50 invisible md:visible">
       <nav class="flex space-x-5">
-        <button class="px-5 py-1 border-1 border-gray-500/10 rounded-full text-white font-extralight text-lg">
+        <button class="btn-anim px-5 py-1 border-1 border-gray-500/10 rounded-full text-white font-extralight text-lg">
           Creations
         </button>
-        <button class="px-5 py-1 border-1 border-gray-500/10 rounded-full text-white font-extralight text-lg">
+        <button class="btn-anim px-5 py-1 border-1 border-gray-500/10 rounded-full text-white font-extralight text-lg">
           Services
         </button>
-        <button class="px-5 py-1 border-1 border-gray-500/10 rounded-full text-white font-extralight text-lg">
+        <button class="btn-anim px-5 py-1 border-1 border-gray-500/10 rounded-full text-white font-extralight text-lg">
           Supply
         </button>
       </nav>
       <button
-        class="px-5 py-1 border-1 border-gray-500/10 rounded-full text-black-500 bg-orange-500 font-extralight text-lg">
+        class="btn-anim px-5 py-1 border-1 border-gray-500/10 rounded-full text-black-500 bg-orange-500 font-extralight text-lg">
         Hire Ultra
       </button>
     </div>
@@ -51,12 +69,7 @@
   <section id="video" class="relative z-0">
     <video
       src="https://framerusercontent.com/modules/assets/F65eNCZCd0MpKYUKcTQfne2zY~0xanaqi1YO3ADrUJ1UFCpQuuYAgTzqfvu4AwgZOxIvs.mp4"
-      loop autoplay playsinline type="video/mp4" class="object-cover" style="
-          height: 486px;
-          width: 100%;
-          border-radius: 0px 0px 48px 48px;
-          display: block;
-          object-fit: cover;
+      autoplay loop type="video/mp4" class="object-cover rounded-4xl w-full h-502 md:h-619 xl:h-904 block" style="
           background-color: var(
             --token-e060cbf5-3cab-4f28-8aa5-86a41d8b663c,
             rgb(18, 18, 23)
@@ -68,9 +81,11 @@
 
   <!-- CAROUSEL SECTION -->
   <section id="carousel" class="px-8 pt-20">
-    <div class="grid grid-cols-2">
+    <div class="text-center md:text-start lg:grid lg:grid-cols-2">
       <div class="space-y-5">
-        <p class="text-white text-1xl font-extralight">We design, build & ship websites that give growing startups
+        <p class="text-white text-xlg md:text-xl lg:text-1xl font-extralight">We design, build & ship websites that give
+          growing
+          startups
           an
           unfair advantage.</p>
         <div class="text-white space-x-5 text-lg">
@@ -171,101 +186,109 @@
 
   <!-- IMAGE-CONTENT SECTION -->
   <section id="image-content" class="relative space-y-3">
-    <div class="m-8 flex justify-between items-center border-t-1 border-gray-500/10">
-      <p class="text-white font-light text-3xl">Made by Ultra</p>
-      <svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" fill="#ffffff" viewBox="0 0 256 256">
+    <div
+      class="mx-8 mb-10 pb-2 md:mb-8 md:m-8 flex justify-between items-center border-b-1 md:border-t-1 md:border-b-0 border-gray-500/10">
+      <p class="text-white font-light text-1.7xl md:text-3xl lg:text-4xl">Made by Ultra</p>
+      <svg xmlns="http://www.w3.org/2000/svg" class="invisible absolute md:relative md:visible" width="150" height="150"
+        fill="#ffffff" viewBox="0 0 256 256">
         <rect width="100%" height="100%" fill="none"></rect>
         <line x1="170" y1="90" x2="64" y2="192" fill="none" stroke="#ffffff" stroke-width="8"></line>
         <polyline points="168 192 64 192 64 88" fill="none" stroke="#ffffff" stroke-width="8"></polyline>
       </svg>
     </div>
     <div id="image-1" class="sticky top-24">
-      <div class="absolute w-full p-12 space-y-5">
-        <h3 class="font-extralight text-2.5xl text-white">Zig Card</h3>
-        <div class="space-x-3">
-          <a class="px-5 py-2 border-1 border-white/30 rounded-full text-white font-extralight text-sm">Framer</a>
-          <a class="px-5 py-2 border-1 border-white/30 rounded-full text-white font-extralight text-sm">Landingpage</a>
-          <a class="relative px-6 py-2 border-1 border-white/30 rounded-full text-white font-extralight text-sm">
-            <svg class="absolute top-2 left-3" xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="#1c1c1c"
+      <div class="absolute bottom-0 md:top-0 w-full p-12 space-y-5">
+        <h3 class="font-extralight text-0.5xl md:text-1.7xl lg:text-2.5xl text-white">Zig Card</h3>
+        <div class="space-x-3 text-2xs md:text-sm">
+          <a class="px-5 py-2 border-1 border-white/30 rounded-full text-white font-extralight">Framer</a>
+          <a class="px-5 py-2 border-1 border-white/30 rounded-full text-white font-extralight">Landingpage</a>
+          <a href="https://www.zigcard.co/"
+            class="relative px-6 py-2 border-1 border-white/30 rounded-full text-white font-extralight hover:bg-white stroke-white hover:stroke-black-500">
+            <svg class="absolute top-2 left-3" xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="none"
               viewBox="0 0 256 256">
               <rect width="45" height="45" fill="none"></rect>
-              <line x1="90" y1="170" x2="192" y2="64" fill="none" stroke="#ffffff" stroke-width="10"></line>
-              <polyline points="88 64 192 64 192 168" fill="none" stroke="#ffffff" stroke-width="16"></polyline>
+              <line x1="90" y1="170" x2="192" y2="64" fill="none" stroke-width="10">
+              </line>
+              <polyline points="88 64 192 64 192 168" fill="none" stroke-width="16"></polyline>
             </svg></a>
         </div>
       </div>
-      <img class="rounded-4xl object-cover h-828 w-full"
+      <img class="rounded-4xl object-cover h-480 md:h-685 xl:h-1027 w-full"
         src="https://framerusercontent.com/images/mRZ7xk9lRVDKRdHI08mtCfNZeRU.jpg">
     </div>
     <div id="image-2" class="sticky top-24">
-      <div class="absolute w-full p-12 space-y-5">
-        <h3 class="font-extralight text-2.5xl text-white">Supernova</h3>
+      <div class="absolute bottom-0 md:top-0 w-full p-12 space-y-5">
+        <h3 class="font-extralight text-0.5xl md:text-1.7xl lg:text-2.5xl text-white">Supernova</h3>
         <div class="space-x-3">
-          <a class="px-5 py-2 border-1 border-white/30 rounded-full text-white font-extralight text-sm">Framer</a>
-          <a class="px-5 py-2 border-1 border-white/30 rounded-full text-white font-extralight text-sm">Landingpage</a>
-          <a class="relative px-6 py-2 border-1 border-white/30 rounded-full text-white font-extralight text-sm">
+          <a class="px-5 py-2 border-1 border-white/30 rounded-full text-white font-extralight">Framer</a>
+          <a class="px-5 py-2 border-1 border-white/30 rounded-full text-white font-extralight">Landingpage</a>
+          <a href="https://www.supernova.io/"
+            class="relative px-6 py-2 border-1 border-white/30 rounded-full text-white font-extralight hover:bg-white stroke-white hover:stroke-black-500">
             <svg class="absolute top-2 left-3" xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="#1c1c1c"
               viewBox="0 0 256 256">
               <rect width="45" height="45" fill="none"></rect>
-              <line x1="90" y1="170" x2="192" y2="64" fill="none" stroke="#ffffff" stroke-width="10"></line>
-              <polyline points="88 64 192 64 192 168" fill="none" stroke="#ffffff" stroke-width="16"></polyline>
+              <line x1="90" y1="170" x2="192" y2="64" fill="none" stroke-width="10"></line>
+              <polyline points="88 64 192 64 192 168" fill="none" stroke-width="16"></polyline>
             </svg></a>
         </div>
       </div>
-      <img class="rounded-4xl object-cover h-828 w-full shadow"
+      <img class="rounded-4xl object-cover h-480 md:h-685 xl:h-1027 w-full shadow"
         src="https://framerusercontent.com/images/sIbmvWdAgcnF60fQmZlyiRgf6I.webp">
     </div>
     <div id="image-3" class="sticky top-24">
-      <div class="absolute w-full p-12 space-y-5">
-        <h3 class="font-extralight text-2.5xl text-white">Koodos Labs</h3>
+      <div class="absolute bottom-0 md:top-0 w-full p-12 space-y-5">
+        <h3 class="font-extralight text-0.5xl md:text-1.7xl lg:text-2.5xl text-white">Koodos Labs</h3>
         <div class="space-x-3">
-          <a class="px-5 py-2 border-1 border-white/30 rounded-full text-white font-extralight text-sm">Framer</a>
-          <a class="px-5 py-2 border-1 border-white/30 rounded-full text-white font-extralight text-sm">Landingpage</a>
-          <a class="relative px-6 py-2 border-1 border-white/30 rounded-full text-white font-extralight text-sm">
+          <a class="px-5 py-2 border-1 border-white/30 rounded-full text-white font-extralight">Framer</a>
+          <a class="px-5 py-2 border-1 border-white/30 rounded-full text-white font-extralight">Landingpage</a>
+          <a href="https://koodoslabs.xyz/"
+            class="relative px-6 py-2 border-1 border-white/30 rounded-full text-white font-extralight hover:bg-white stroke-white hover:stroke-black-500">
             <svg class="absolute top-2 left-3" xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="#1c1c1c"
               viewBox="0 0 256 256">
               <rect width="45" height="45" fill="none"></rect>
-              <line x1="90" y1="170" x2="192" y2="64" fill="none" stroke="#ffffff" stroke-width="10"></line>
-              <polyline points="88 64 192 64 192 168" fill="none" stroke="#ffffff" stroke-width="16"></polyline>
+              <line x1="90" y1="170" x2="192" y2="64" fill="none" stroke-width="10"></line>
+              <polyline points="88 64 192 64 192 168" fill="none" stroke-width="16"></polyline>
             </svg></a>
         </div>
       </div>
-      <img class="rounded-4xl object-cover h-828 w-full shadow"
+      <img class="rounded-4xl object-cover h-480 md:h-685 xl:h-1027 w-full shadow"
         src="https://framerusercontent.com/images/TMTyQpIBBo4lISqZexNKvpzLM.jpg">
     </div>
     <div id="image-4" class="sticky top-24">
-      <div class="absolute w-full p-12 space-y-5">
-        <h3 class="font-extralight text-2.5xl text-white">Godlike</h3>
+      <div class="absolute bottom-0 md:top-0 w-full p-12 space-y-5">
+        <h3 class="font-extralight text-0.5xl md:text-1.7xl lg:text-2.5xl text-white">Godlike</h3>
         <div class="space-x-3">
-          <a class="px-5 py-2 border-1 border-white/30 rounded-full text-white font-extralight text-sm">Framer</a>
-          <a class="px-5 py-2 border-1 border-white/30 rounded-full text-white font-extralight text-sm">Landingpage</a>
-          <a class="relative px-6 py-2 border-1 border-white/30 rounded-full text-white font-extralight text-sm">
+          <a class="px-5 py-2 border-1 border-white/30 rounded-full text-white font-extralight">Framer</a>
+          <a class="px-5 py-2 border-1 border-white/30 rounded-full text-white font-extralight">Landingpage</a>
+          <a href="https://www.godlike.so/"
+            class="relative px-6 py-2 border-1 border-white/30 rounded-full text-white font-extralight hover:bg-white stroke-white hover:stroke-black-500">
             <svg class="absolute top-2 left-3" xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="#1c1c1c"
               viewBox="0 0 256 256">
               <rect width="45" height="45" fill="none"></rect>
-              <line x1="90" y1="170" x2="192" y2="64" fill="none" stroke="#ffffff" stroke-width="10"></line>
-              <polyline points="88 64 192 64 192 168" fill="none" stroke="#ffffff" stroke-width="16"></polyline>
+              <line x1="90" y1="170" x2="192" y2="64" fill="none" stroke-width="10"></line>
+              <polyline points="88 64 192 64 192 168" fill="none" stroke-width="16"></polyline>
             </svg></a>
         </div>
       </div>
-      <img class="rounded-4xl object-cover h-828 w-full shadow"
+      <img class="rounded-4xl object-cover h-480 md:h-685 xl:h-1027 w-full shadow"
         src="https://framerusercontent.com/images/rWWHigj6F5wZSKwiBjDR4xRqspc.jpg">
     </div>
   </section>
 
 
   <!-- EXPERTISE SECTION -->
-  <section id="expertise" class="px-12 divide-y divide-gray-500/10">
-    <div class="flex justify-between items-center divide-y">
-      <p class="text-white font-light text-3xl">Expertise</p>
-      <svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" fill="#ffffff" viewBox="0 0 256 256">
+  <section id="expertise" class="px-6 md:px-8 lg:px-10 xl:px-12 divide-y divide-gray-500/10">
+    <div class="flex justify-between items-center divide-y pt-6 pb-4 md:pt-8 md:py-8 lg:py-10 xl:py-12">
+      <p class="text-white font-light text-1.7xl md:text-3xl lg:text-4xl">Expertise</p>
+      <svg xmlns="http://www.w3.org/2000/svg" class="invisible absolute md:visible md:relative" width="150" height="150"
+        fill="#ffffff" viewBox="0 0 256 256">
         <rect width="100%" height="100%" fill="none"></rect>
         <line x1="170" y1="90" x2="64" y2="192" fill="none" stroke="#ffffff" stroke-width="8"></line>
         <polyline points="168 192 64 192 64 88" fill="none" stroke="#ffffff" stroke-width="8"></polyline>
       </svg>
     </div>
-    <div class="grid grid-cols-2 gap-x-10 pt-8">
-      <ul class="text-white font-extralight text-xlg divide-y-2 divide-gray-500/10">
+    <div class="space-y-5 md:space-y-0 md:grid md:grid-cols-2 gap-x-10 pt-8 text-slg md:text-xlg">
+      <ul class="text-white font-extralight divide-y-2 divide-gray-500/10">
         <li class="text-gray-300 py-2">Capabilities</li>
         <li class="py-2">Landing Pages</li>
         <li class="py-2">Marketing Websites</li>
@@ -292,17 +315,18 @@
 
 
   <!-- APPROACH SECTION -->
-  <section id="approach" class="px-12 divide-y divide-gray-500/10">
-    <div class="flex justify-between items-center divide-y">
-      <p class="text-white font-light text-3xl">Approach</p>
-      <svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" fill="#ffffff" viewBox="0 0 256 256">
+  <section id="approach" class="px-6 md:px-8 lg:px-10 xl:px-12 divide-y divide-gray-500/10">
+    <div class="flex justify-between items-center divide-y pt-12 md:pt-8 xl:pt-12 pb-4 md:pb-8 xl:pb-12">
+      <p class="text-white font-light text-1.7xl md:text-3xl lg:text-4xl">Approach</p>
+      <svg xmlns="http://www.w3.org/2000/svg" class="invisible absolute md:visible md:relative" width="150" height="150"
+        fill="#ffffff" viewBox="0 0 256 256">
         <rect width="100%" height="100%" fill="none"></rect>
         <line x1="170" y1="90" x2="64" y2="192" fill="none" stroke="#ffffff" stroke-width="8"></line>
         <polyline points="168 192 64 192 64 88" fill="none" stroke="#ffffff" stroke-width="8"></polyline>
       </svg>
     </div>
-    <div>
-      <ul class="space-y-5">
+    <div class="pt-5 md:pt-7">
+      <ul class="space-y-5 xl:space-y-0 xl:grid xl:grid-cols-3 xl:gap-3">
         <li class="p-10 border-1 border-white/10 rounded-4xl space-y-2 relative">
           <p class="absolute text-1.7xl font-extralight text-gray-500/20 right-10 top-10">1</p>
           <div class="w-10">
@@ -420,25 +444,30 @@
   <!-- READY SECTION -->
   <section id="ready" class="bg-orange-500 p-12 rounded-4xl mt-20 divide-y divide-black-500/20">
     <div class="flex justify-between items-center divide-y">
-      <p class="text-black-500 font-light text-3xl">Ready for lift-off?</p>
-      <svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" fill="#121217" viewBox="0 0 256 256">
+      <p class="text-black-500 font-light text-1.7xl md:text-3xl lg:text-4xl">Ready for lift-off?</p>
+      <svg xmlns="http://www.w3.org/2000/svg" class="invisible absolute md:visible md:relative" width="150" height="150"
+        fill="#121217" viewBox="0 0 256 256">
         <rect width="100%" height="100%" fill="none"></rect>
         <line x1="170" y1="90" x2="64" y2="192" fill="none" stroke="#121217" stroke-width="8"></line>
         <polyline points="168 192 64 192 64 88" fill="none" stroke="#121217" stroke-width="8"></polyline>
       </svg>
     </div>
     <div>
-      <p class="text-black-500 font-extralight text-xl pt-10 pb-6">Speak to our founder & find out how you can change
-        the way you source web design & development, forever.
-      </p>
-      <div class="flex pb-7">
-        <div class="rounded-4xl border-1 border-black-500/20 p-2">
-          <button class="font-light text-xsm rounded-4xl p-2 bg-black-500 text-orange-500">Design & Build</button>
-          <button class="font-light text-xsm rounded-4xl p-2">Build only</button>
+      <div class="xl:flex xl:items-center">
+        <p class="text-black-500 font-extralight text-xlg md:text-xl lg:text-1xl pt-10 pb-6">Speak to our
+          founder & find
+          out how you can change
+          the way you source web design & development, forever.
+        </p>
+        <div class="flex justify-center md:justify-start pb-7 xl:block xl:ml-10">
+          <div class="rounded-4xl border-1 border-black-500/20 p-2 flex">
+            <button class="font-light text-xsm rounded-4xl p-2 bg-black-500 text-orange-500">Design & Build</button>
+            <button class="font-light text-xsm rounded-4xl p-2">Build only</button>
+          </div>
         </div>
       </div>
-      <div class="grid grid-cols-2 gap-x-5 gap-y-5">
-        <div class="p-4 border border-black-500/20 rounded-2xl">
+      <div class="md:grid md:grid-cols-2 xl:grid-cols-3 gap-x-5 gap-y-5">
+        <div class="p-4 border border-black-500/20 rounded-2xl flex flex-col justify-between">
           <div class="flex justify-between">
             <p class="font-light text-xsm">Landing Page</p>
             <a href="https://www.framer.com/?via=cedric_design">Framer</a>
@@ -531,7 +560,7 @@
           </a>
         </div>
 
-        <div class="p-4 border border-black-500/20 rounded-2xl">
+        <div class="p-4 border border-black-500/20 rounded-2xl flex flex-col justify-between">
           <div class="flex justify-between">
             <p class="font-light text-xsm">Website</p>
             <a href="https://www.framer.com/?via=cedric_design">Framer</a>
@@ -623,7 +652,7 @@
           </a>
         </div>
 
-        <div class="p-4 border border-black-500/20 rounded-2xl col-span-2">
+        <div class="p-4 border border-black-500/20 rounded-2xl col-span-2 xl:col-span-1 flex flex-col justify-between">
           <div class="flex justify-between">
             <p class="font-light text-xsm">Web App</p>
             <a href="https://www.framer.com/?via=cedric_design">Webflow</a>
@@ -715,24 +744,27 @@
           </a>
         </div>
       </div>
-      <p class="flex justify-center font-light text-black-500/60 pt-12">Prices may vary depending on your requirements.
+      <p class="flex justify-center font-light text-black-500/60 pt-12 md:text-sm">Prices may vary depending on your
+        requirements.
       </p>
   </section>
 
 
   <!-- QUESTIONS SECTION -->
-  <section id="questions" class="p-12 mt-xs rounded-4xl bg-black-300 divide-y divide-gray-300/20">
+  <section id="questions" class="p-12 mt-xs mb-24 md:mb-3 rounded-4xl bg-black-300 md:divide-y md:divide-gray-300/20">
     <div class="space-y-3 pb-12">
-      <p class="text-white text-1.7xl font-light">Have Questions?</p>
-      <p class="text-xsm text-gray-300 font-light">Chat with us or schedule a call with our founder, Cédric. He is
+      <p class="text-white text-1.7xl md:text-1.7xl xl:text-2.5xl font-light">Have Questions?</p>
+      <p class="text-sm md:text-xsm lg:text-slg text-gray-300 font-light">Chat with us or schedule a call with our
+        founder, Cédric.
+        He is
         looking forward to hear from you!</p>
-      <div class="space-x-3 pt-3">
+      <div class="md:space-x-3 pt-3 flex flex-col text-center space-y-3 md:space-y-0 md:flex-row">
         <a class="bg-white text-black-500 rounded-4xl py-2 px-5 font-extralight text-lg">Schedule a call</a>
         <a class="text-white rounded-4xl py-2 px-5 font-extralight text-lg border-1 border-gray-500/20">Get in
           touch</a>
       </div>
     </div>
-    <div class="flex justify-between items-center pt-12">
+    <div class="flex flex-col space-y-10 md:flex-row md:space-y-0 justify-between items-center pt-6 md:pt-12">
       <p class="text-white text-slg font-extralight">Made with love in <span class="font-bold">Framer</span></p>
       <div class="flex space-x-5">
         <a class="w-6 logo-hover" href="https://twitter.com/StudioUltraCo">
