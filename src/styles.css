@@ -2,24 +2,6 @@ html {
   scroll-behavior: smooth;
 }
 
-@keyframes translate-up-anim {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-45px);
-  }
-}
-
-@keyframes translate-down-anim {
-  0% {
-    transform: translateY(-45px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
 @keyframes scroll {
   from {
     transform: translateX(0);
@@ -109,34 +91,6 @@ html {
 .translate-up {
   height: 40px;
   overflow: hidden;
-}
-
-.translate-up:hover #title-1 {
-  animation-name: translate-up-anim;
-  animation-duration: 0.35s;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-out;
-}
-
-.translate-up:not(:hover) #title-1 {
-  animation-name: translate-down-anim;
-  animation-duration: 0.35s;
-  animation-fill-mode: backwards;
-  animation-timing-function: ease-out;
-}
-
-.translate-up:hover #title-2 {
-  animation-name: translate-up-anim;
-  animation-duration: 0.35s;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-out;
-}
-
-.translate-up:not(:hover) #title-2 {
-  animation-name: translate-down-anim;
-  animation-duration: 0.35s;
-  animation-fill-mode: backwards;
-  animation-timing-function: ease-out;
 }
 
 .slider {

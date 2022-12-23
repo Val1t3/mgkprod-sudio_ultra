@@ -63,6 +63,9 @@ module.exports = {
         md: '810px',
         lg: '1200px',
         xl: '1440px'
+      },
+      transitionDelay: {
+        40: '40ms'
       }
     },
   },
